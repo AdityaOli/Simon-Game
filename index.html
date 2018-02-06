@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Game</title>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+    <!-- Material Design icon font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h2 class="text-center SimonGame">The Simon Game</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="gamefield">
+          <div id="" class="gamebutton" onClick="#"></div>
+          <div id="" class="gamebutton" onClick="#"></div>
+          <div id="blue" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="green" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          
+          <div id="red" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+          <div id="dark" class="gamebutton" onClick="addToPlayer(this.id)"></div>
+      </div>  
+    </div>
+  </div>
+  <div id="gameNumber"><h2 id="clickNumber">0</h2></div>
+  <div class="row">
+    <div class="col-md-12">
+
+<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect fa fa-toggle-off" onClick="strictMode()" id="strictMode">
+  Strict
+</button>
+
+  
+  <button class="mdl-button mdl-js-button mdl-button--raised" onClick="newGame()" id="reset">
+  Reset
+</button>
+      
+      
+<dialog class="mdl-dialog">
+    <h4 class="mdl-dialog__title"></h4>
+    <div class="mdl-dialog__content">
+      
+    </div>
+      <button type="button" class="close"> close <i class="fa fa-times" aria-hidden="true"></i> </button>
+ </dialog>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

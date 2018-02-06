@@ -1,0 +1,203 @@
+@import 'https://fonts.googleapis.com/css?family=Muli';
+body {
+  color: white;
+  font-family: 'Muli', sans-serif;
+}
+.greenGradient {
+  background: blue;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(blue, green);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(blue, green);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(blue, green);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(blue, green);
+  /* Standard syntax */
+}
+.redGradient {
+  background: #D31027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #EA384D, #D31027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #EA384D, #D31027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.gamefield {
+  margin: 0px auto;
+  justify-content: center;
+}
+.align {
+  display: flex;
+  justify-content: center;
+}
+.top-row {
+  display: flex;
+  justify-content: center;
+}
+.middle-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px auto;
+}
+.bottom-row {
+  display: flex;
+  justify-content: center;
+}
+.gamebutton {
+  width: 90px;
+  height: 90px;
+  float: left;
+}
+#blue {
+  border: 10px dotted #08BDBD;
+  margin: 50px;
+}
+#blue:active {
+  background-image: -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#green {
+  border: 10px dotted #29BF12;
+  margin: 50px;
+}
+#green:active {
+  background-image: -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#red {
+  border: 10px dotted #F21B3F;
+  margin: 50px;
+}
+#red:active {
+  background-image: -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#dark {
+  border: 10px dotted #FF9914;
+  margin: 50px;
+}
+#dark:active {
+  background-image: -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#blue.hover {
+  background-image: -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #08BDBD, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#green.hover {
+  background-image: -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #29BF12, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#red.hover {
+  background-image: -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #F21B3F, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+#dark.hover {
+  background-image: -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -moz-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.25, rgba(80, 80, 80, 0.1)), color-stop(0.25, transparent)), -webkit-gradient(radial, 0 100%, 100% 0, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1))), -webkit-gradient(radial, 0 0, 100% 100%, color-stop(0.75, transparent), color-stop(0.75, rgba(80, 80, 80, 0.1)));
+  background-image: -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -webkit-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), -o-radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  background-image: radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1)), radial-gradient(circle, #FF9914, rgba(80, 80, 80, 0.1));
+  -moz-background-size: 10px 10px;
+  background-size: 10px 10px;
+  -webkit-background-size: 10px 10.1px;
+  /* override value for webkit */
+}
+.btn-sett {
+  font-size: 2.7em;
+  text-align: left;
+  transition: 500ms;
+  width: 70px;
+}
+.btn-sett:hover {
+  color: #29BF12;
+}
+.modal-title {
+  color: rgba(80, 80, 80, 0.1);
+  text-align: center;
+}
+.black {
+  color: rgba(80, 80, 80, 0.1);
+  text-align: center;
+}
+#strict {
+  margin: 5px auto;
+  text-align: center;
+}
+#clickNumber {
+  justify-content: center;
+  z-index: 999;
+}
+#gameNumber {
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.SimonGame {
+  color: -webkit-linear-gradient(red, yellow);
+  /* For Safari 5.1 to 6.0 */
+  color: -o-linear-gradient(red, yellow);
+  /* For Opera 11.1 to 12.0 */
+  color: -moz-linear-gradient(red, yellow);
+  /* For Firefox 3.6 to 15 */
+  color: linear-gradient(red, yellow);
+  /* Standard syntax */
+}
+#reset {
+  background: rgba(100, 254, 78, 0.8);
+}
+.close {
+  background: rgba(255, 0, 0, 0.9);
+}
